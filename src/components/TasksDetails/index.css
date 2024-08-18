@@ -1,0 +1,36 @@
+.task-container {
+    display: grid;
+    gap: 8px;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-auto-flow: column;
+    grid-template-columns: 200px 80px 120px;
+}
+
+.task-container:not(:first-child) {
+    margin-top: 4px;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+    display: none;
+}
+
+input[type="time" i] {
+    padding-inline-start: 0px;
+    padding: 0px;
+}
+
+
+.task-container input, select {
+    box-sizing: content-box;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+}
+
+.task-container input:focus, select:focus {
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px black solid;
+}

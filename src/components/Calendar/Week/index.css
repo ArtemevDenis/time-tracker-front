@@ -1,0 +1,62 @@
+.calendar-week {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto;
+}
+
+.calendar-week .calendar-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-week .calendar-navigation button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.calendar-week .calendar-navigation span {
+    font-weight: bold;
+}
+
+.calendar-week .calendar-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.calendar-week .calendar-header span {
+    text-align: center;
+    font-weight: bold;
+}
+
+.calendar-week .calendar-week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 10px;
+}
+
+.calendar-week .calendar-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.calendar-week .calendar-day-weekend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: rgba(250, 29, 29, 0.56);
+    color: white;
+}

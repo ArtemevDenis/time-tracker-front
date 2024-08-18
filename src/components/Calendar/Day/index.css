@@ -1,0 +1,56 @@
+.calendar-day-card {
+    background-color: #FFF2F2;
+    border-radius: 4px;
+    min-height: 160px;
+    max-height: 160px;
+    box-shadow: 0 8px 6px -6px #888888;
+    display: grid;
+    gap: 4px;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-auto-flow: row;
+    grid-template-rows: 40px;
+}
+
+.calendar-day-card:hover {
+    cursor: pointer;
+}
+
+.calendar-day-header {
+    padding: 5px 10px 5px 10px;
+    background-color: #FFDCDC;
+    flex-wrap: nowrap;
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+}
+
+.tasks-list {
+    height: 100%;
+    overflow: scroll;
+}
+
+.task-item {
+    background-color: #FFFFFF;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: left;
+    padding: 2px;
+    font-size: 12px;
+    height: 15px;
+}
+
+.popup {
+    display: none;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.popup-open {
+    display: block;
+    opacity: 1;
+    z-index: 99;
+}
